@@ -85,7 +85,7 @@ El algoritmo:
 
 ---
 
-## ⚙️ Requisitos Técnicos
+##  Requisitos Técnicos
 
 * **Lenguajes:** Python 3.10+ / C / Java (según herramienta usada)
 * **Herramientas:**
