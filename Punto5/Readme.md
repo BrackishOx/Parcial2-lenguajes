@@ -9,7 +9,7 @@
 ## **Ejecución**
 
 ```bash
-python analizador_descendente.py
+python Punto5.py
 ```
 
 ---
