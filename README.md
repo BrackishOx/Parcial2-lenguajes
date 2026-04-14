@@ -59,6 +59,9 @@ F → (E) | id
   * **PREDICT**
 * **Diseño del algoritmo ascendente basado en pila.**
 * **Implementación en Python** con pruebas sobre expresiones aritméticas válidas e inválidas.
+* ---
+
+### **3. Implementación de un Analizador Sintáctico Ascendente en Python Ambiguedad**
 
 ---
 
