@@ -65,8 +65,11 @@ F → (E) | id
 ### **3. Implementación de un Analizador Sintáctico Ascendente en Python Ambiguedad**
 
 if E1 then if E2 then S1 else S2
+
 Caso 1 (else interno)
 if E1 then (if E2 then S1 else S2)
+
+
 Caso 2 (else externo)
 (if E1 then if E2 then S1) else S2
 prop → if expr then prop
