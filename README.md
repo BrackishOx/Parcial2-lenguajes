@@ -78,6 +78,22 @@ prop → if expr then prop
      | if expr then prop else prop
      | otras
 ```
+**gramática ambigua
+```
+prop → if expr then prop
+     | if expr then prop else prop
+     | otras
+```
+**solución
+```
+stmt → matched | unmatched
+
+matched → if expr then matched else matched
+        | otras
+
+unmatched → if expr then stmt
+          | if expr then matched else unmatched
+```
 ---
 
 ### **4. Implementación del Parser con el Algoritmo CYK**
