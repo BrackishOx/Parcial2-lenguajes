@@ -39,27 +39,6 @@ DELETE user WHERE id=1;
 
 ---
 
-### **3. Implementación de un Analizador Sintáctico Ascendente en Python**
-
-Se parte de la siguiente gramática:
-
-```
-E → E + T | T
-T → T * F | F
-F → (E) | id
-```
-
-#### Actividades desarrolladas:
-
-* **Transformación a una gramática LL(1)** (eliminación de recursión por la izquierda y factorización).
-* **Cálculo de los conjuntos**:
-
-  * **FIRST**
-  * **FOLLOW**
-  * **PREDICT**
-* **Diseño del algoritmo ascendente basado en pila.**
-* **Implementación en Python** con pruebas sobre expresiones aritméticas válidas e inválidas.
-
 ---
 
 ### **3. Implementación de un Analizador Sintáctico Ascendente en Python Ambiguedad**
