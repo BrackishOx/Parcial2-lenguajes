@@ -4,34 +4,43 @@
 
 **5. Diseñe e implemente un algoritmo de emparejamiento para el algoritmo descendente recursivo.**
 
+---
 
 ## **Ejecución**
 
 ```bash
 python analizador_descendente.py
-````
+```
 
-### **Resultados esperados**
+---
+
+## **Descripción**
+
+Este analizador descendente recursivo valida un lenguaje simple que incluye:
+
+* Asignaciones de variables
+* Estructuras condicionales (`if-then`)
+* Expresiones aritméticas con operadores `+` y `*`
+
+---
+
+## **Resultados esperados**
 
 ```
-Entrada: 'id + id * id'
-Tokens: ['id', '+', 'id', '*', 'id']
+Entrada: 'x = a + b'
+Tokens: ['x', '=', 'a', '+', 'b']
 Resultado: Sintaxis correcta
 
-Entrada: '( id + id ) * id'
-Tokens: ['(', 'id', '+', 'id', ')', '*', 'id']
+Entrada: 'if x then y = a * b'
+Tokens: ['if', 'x', 'then', 'y', '=', 'a', '*', 'b']
 Resultado: Sintaxis correcta
 
-Entrada: 'id +'
-Tokens: ['id', '+']
+Entrada: '= x a'
+Tokens: ['=', 'x', 'a']
 Resultado: Sintaxis incorrecta
 
-Entrada: 'id * ( id )'
-Tokens: ['id', '*', '(', 'id', ')']
-Resultado: Sintaxis correcta
-
-Entrada: '( id + id'
-Tokens: ['(', 'id', '+', 'id']
+Entrada: 'if then x'
+Tokens: ['if', 'then', 'x']
 Resultado: Sintaxis incorrecta
 ```
 
@@ -41,42 +50,51 @@ Resultado: Sintaxis incorrecta
 
 * **Lenguaje:** Python
 * **Tipo de analizador:** Descendente Recursivo
-* **Objetivo:** Validar expresiones aritméticas simples con `id`, `+`, `*`, `(` y `)`.
-* **Método de análisis:** Coincidencias mediante operacion recursiva mediante funciones que implementan reglas gramaticales.
-* **Tipo de gramática:** LL(1), sin recursión por la izquierda.
+* **Método:** Emparejamiento de tokens mediante funciones recursivas
+* **Tipo de gramática:** LL(1), sin recursión por la izquierda
 
-### **Gramática utilizada**
+---
+
+## **Gramática utilizada**
 
 ```
-E  → T E'
-E' → + T E' | ε
-T  → F T'
-T' → * F T' | ε
-F  → id | ( E )
+stmt → id = expr
+     | if expr then stmt
+
+expr → term expr'
+
+expr' → + term expr'
+      | ε
+
+term → factor term'
+
+term' → * factor term'
+      | ε
+
+factor → id | num | ( expr )
 ```
 
-### **Entradas válidas**
+---
 
-* `id + id * id`
-* `( id + id ) * id`
-* `id * ( id )`
+## **Entradas válidas**
 
-### **Entradas inválidas**
+* `x = a + b`
+* `if x then y = a * b`
+* `if x then if y then z = a`
 
-* `id +`
-* `( id + id`
+---
+
+## **Entradas inválidas**
+
+* `= x a`
+* `if then x`
+* `x =`
 
 ---
 
 ## **Conclusiones**
 
-* El **analizador descendente recursivo** es una técnica eficaz para implementar parsers de gramáticas LL(1), ya que cada no terminal se traduce naturalmente en una función recursiva.
-* El uso de un **algoritmo de emparejamiento** garantiza que los tokens sean procesados en orden y permite detectar errores de forma temprana.
-* Esta implementación demuestra cómo la recursión permite representar la jerarquía de operadores y paréntesis sin necesidad de estructuras de control complejas.
-* El analizador propuesto constituye una base sólida para la comprensión de procesos de **análisis sintáctico** en compiladores e intérpretes.
-
-```
-
-
-¿Quieres que le agregue una pequeña sección final con recomendaciones o posibles mejoras del analizador (por ejemplo, manejo de más operadores o mensajes de error detallados)?
-```
+* El analizador descendente recursivo permite implementar parsers de forma clara y estructurada.
+* El algoritmo de emparejamiento asegura la correcta validación de los tokens.
+* La inclusión de asignaciones y condicionales demuestra cómo extender el analizador a lenguajes más complejos.
+* Este enfoque es fundamental en el diseño de compiladores e intérpretes.
