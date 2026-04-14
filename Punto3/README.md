@@ -11,7 +11,7 @@ prop → if expr then prop
 prop_emparejada → if expr then prop_emparejada else prop
                 | otras
 ```
-
+** Adicionalmente, se implementó un ejemplo práctico en Python para ilustrar el comportamiento de la gramática y reforzar la comprensión del problema de ambigüedad.
 ---
 
 ## **Demostración de ambigüedad**
