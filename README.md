@@ -59,10 +59,19 @@ F → (E) | id
   * **PREDICT**
 * **Diseño del algoritmo ascendente basado en pila.**
 * **Implementación en Python** con pruebas sobre expresiones aritméticas válidas e inválidas.
-* ---
+
+---
 
 ### **3. Implementación de un Analizador Sintáctico Ascendente en Python Ambiguedad**
 
+if E1 then if E2 then S1 else S2
+Caso 1 (else interno)
+if E1 then (if E2 then S1 else S2)
+Caso 2 (else externo)
+(if E1 then if E2 then S1) else S2
+prop → if expr then prop
+     | if expr then prop else prop
+     | otras
 ---
 
 ### **4. Implementación del Parser con el Algoritmo CYK**
