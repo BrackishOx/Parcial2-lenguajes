@@ -105,7 +105,7 @@
   plt.show()
   ```
 
-  para que solo se guarde el archivo `comparacion_parsers.png`.
+  para que solo se guarde el archivo `putno4.png`.
 
 
 ---
