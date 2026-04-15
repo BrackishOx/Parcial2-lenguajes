@@ -1,6 +1,6 @@
 # Parcial 2 - Punto 4
 
-## Enunciado / Objetivo
+## Enunciado
 
 4. Implemente un parser usando el algoritmo **CYK**.
    Realice pruebas sobre el rendimiento de este algoritmo comparándolo con un **parser de tipo predictivo LL(1)**.
