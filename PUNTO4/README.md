@@ -31,7 +31,7 @@
 1. **Ejecutar el programa principal**:
 
    ```bash
-   python comparacion_parsers.py
+   python punto4.py
    ```
 
    * El programa genera cadenas aleatorias y mide el tiempo de ejecución de ambos algoritmos.
