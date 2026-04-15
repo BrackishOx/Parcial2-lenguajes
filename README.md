@@ -5,7 +5,7 @@
 
 ## Descripción General
 
-Este proyecto corresponde al **Parcial 2** de la asignatura **Lenguajes de Programación**. El objetivo es diseñar, implementar y analizar diferentes componentes relacionados con **gramáticas formales** y **análisis sintáctico**, aplicados al diseño de un lenguaje de programación que permita realizar operaciones **CRUD** sobre una base de datos.
+Este proyecto corresponde al **Parcial 2** de la asignatura **Lenguajes de Programación**. El objetivo es diseñar, implementar y analizar diferentes componentes relacionados con **gramáticas formales** y **análisis sintáctico**, aplicados al diseño de un lenguaje de programación que permita realizar operaciones **CRUD**.
 ---
 
 ## Contenido del Proyecto
