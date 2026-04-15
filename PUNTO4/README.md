@@ -22,7 +22,7 @@
 ## Archivos
 
 * `punto4.py`: Código fuente principal que implementa los dos parsers, ejecuta las pruebas y genera los gráficos.
-* `punto4.png`: Gráfica generada automáticamente con los resultados de rendimiento.
+* `comparacion_parsers.png`: Gráfica generada automáticamente con los resultados de rendimiento.
 
 ---
 
