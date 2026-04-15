@@ -1,6 +1,6 @@
 # Parcial 2 - Punto 1 y 2
 
-## Enunciado/objetivo
+## Enunciado
 
 1. Diseñe una gramatico de un lenguaje de programacion que permita hacer las opceraciones CRUD en una base de datos.
 
@@ -98,8 +98,6 @@ Las pruebas se realizan con el fin que el parser acepta sentencias válidas y re
   ```bash
   java -version
   ```
-- Contribuyeron: [Lista de colaboradores, ej. @usuario1, @usuario2].
-- Licencia: MIT (libre para uso educativo).
----
+
 
 
