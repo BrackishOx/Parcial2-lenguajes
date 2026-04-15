@@ -87,7 +87,7 @@
 
 * El **parser CYK** es más general (puede procesar cualquier gramática libre de contexto en CNF), pero su rendimiento decrece rápidamente con cadenas más largas debido a su complejidad cúbica.
 * El **parser predictivo LL(1)** es mucho más eficiente y rápido, aunque requiere gramáticas adecuadas y sin ambigüedad.
-* La gráfica confirma que el parser predictivo mantiene tiempos casi constantes, mientras que el parser CYK crece de forma exponencial.
+* La gráfica confirma que el parser predictivo mantiene tiempos casi constantes, mientras que el parser CYK crece de forma cúbica.
 
 ---
 
