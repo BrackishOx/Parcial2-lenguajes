@@ -110,5 +110,4 @@
 
 ---
 
-¿Deseas que te genere este `README.md` como archivo descargable listo para incluir en tu entrega (por ejemplo, en formato Markdown o PDF)?
 
